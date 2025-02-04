@@ -1,0 +1,31 @@
+*{
+    margin: 10px;
+    padding:10px ;
+    background-color: rgb(78, 54, 54);
+}
+
+.heading1{
+    color:palevioletred;
+}
+
+.heading2{
+    color: darkcyan;
+
+}
+#bglime{
+    color:cornflowerblue ;
+}
+.unique{
+    color:darkslategray ;
+}
+.para1{
+    color:darkgoldenrod;
+
+}
+.terms{
+    color :blueviolet ;
+
+}
+.google {
+    color :crimson;
+}
