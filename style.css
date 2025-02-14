@@ -34,7 +34,7 @@ li:hover{
     cursor: pointer;
     font-weight: 600;}
 .hehe{
-    color:pink;
+    color:cadetblue;
     background-color: black;
     border: none;
     padding: 10 px;
@@ -92,7 +92,7 @@ li:hover{
         .hero-section{
             display: flex;
             flex-direction: column;
-            margin: 50px 20px;
+            margin: 20px 20px;
         }
     
         .left{
@@ -100,7 +100,22 @@ li:hover{
         }
     
         .left p{
-            width: 50ch;
+            width: 30ch;
+        }
+        .reshma{
+            margin-top: 10px;
+            margin-bottom: 2px;
+            height:200px;
+            width: 350px;
+            
+        }
+        .cta{
+            margin-top:6px;
+            margin-bottom: 5px;
+        }
+        .hehe{
+            padding:5px;
+
         }
     }
 @media screen and (min-width: 481px) and (max-width: 1023px){
