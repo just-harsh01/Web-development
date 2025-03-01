@@ -1,0 +1,260 @@
+*{
+    margin:0%;
+    padding:0%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.logo-container{
+    width:40px;
+    height:40px;
+    border-radius: 70%;
+    border:2px solid white;
+    background-color:peru;
+}
+.img{
+    height:30px;
+    width: 30px ;
+    border-radius: 50%;
+    animation-name: circles;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+    
+}
+.navbar{
+display: flex;
+flex-direction: row ;
+justify-content: space-between;
+align-items: center;
+margin:0px 10px;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+li{
+    margin: 20px;
+    list-style:none;
+
+}
+
+li:hover{
+    color:pink;
+    cursor: pointer;
+    font-weight: 600;}
+.hehe{
+    
+    background-color:darkseagreen;
+    border: none;
+    padding: 10 px;
+    border-radius:10px;
+    font-weight:60;
+    font-size :15px;
+
+}
+.hehe:hover{
+    color:yellow;
+    scale: 1.2 ;
+
+
+
+}
+.blue{
+    color: blueviolet;
+
+}
+.loader { 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    gap:10px;
+
+
+}
+.dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background-color: blue;
+    animation:up-down 1.2s infinite ;
+
+    
+
+    
+}
+.dot:nth-child(2){
+    animation-delay: 0.1s;
+}
+.dot:nth-child(3){
+    animation-delay: 0.2s;
+
+}
+.dot:nth-child(4)
+{
+    animation-delay: 0.3s;
+}
+
+h1::first-letter{
+    font-size:larger;
+    color:brown;
+
+}
+h1::after{
+    content: "...";
+}
+p::first-line{
+    color: burlywood;
+}
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 50px 0px 50px;
+}
+.left p{
+    width: 60ch;
+    margin-top: 10px;
+}
+
+.cta{
+    margin-top: 50px;
+    background-color: cornflowerblue;
+    font-weight: 300;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+}
+.reshma{
+    height: 400px;
+    width:400px;
+    
+}
+.reshma:hover{transition-duration: 2s;
+    border-radius: 30%;
+    transform:rotate(-360deg);
+
+}
+.marquee-container{
+    background-color: aqua;
+    display: none;
+    align-items: center;
+}
+.cta:hover{
+    cursor: pointer;
+    scale: 1.3;
+    background-color:burlywood;
+    transition: all 0.5s ease-out;
+    transform: scale(1.4) rotate(-10deg);
+}
+@keyframes circles {
+    0%,100%{
+        transform:translate(0,0);
+    
+    }
+    25%{
+        transform:translate(20px,0);
+
+    }
+    50%{
+        transform:translate(20px,20px);
+    }
+    75%{
+        transform:translate(0,20px);
+    }
+
+
+
+
+}
+@keyframes up-down{
+    0%,100%{
+        transform:translateY(0px);
+
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+ 
+    
+}
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+
+        .nav-links{
+            position:absolute;
+            background-color: black;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            color:cornflowerblue;
+            display: none;
+         
+            
+        }
+    
+        .navbar{
+            margin-top: 10px;
+        }
+    
+        .hero-section{
+            display: flex;
+            flex-direction: column;
+            margin: 20px 20px;
+        }
+    
+        .left{
+            width: 90vw;
+        }
+    
+        .left p{
+            width: 30ch;
+        }
+        .reshma{
+            margin-top: 10px;
+            margin-bottom: 2px;
+            height:200px;
+            width: 350px;
+            
+        }
+        .cta{
+            margin-top:6px;
+            margin-bottom: 5px;
+        }
+        .hehe{
+            padding:5px;
+            
+
+        }
+        .menu-btn:focus + .nav-links
+        {display:block;
+        }
+    }
+@media screen and (min-width: 481px) and (max-width: 1023px){
+
+
+        .navbar{
+            margin-top: 10px;
+        }
+    
+        .hero-section{
+            margin: 100px 30px;
+        }
+    
+        .left p{
+            width: 40ch;
+        }
+    
+    }
